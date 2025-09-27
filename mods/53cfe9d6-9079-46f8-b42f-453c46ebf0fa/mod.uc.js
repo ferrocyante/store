@@ -310,7 +310,7 @@ if (Services.prefs.getBoolPref("browser.tabs.allow_transparent_browser")) {
       // At this point, the URL bar view should be visible and ready for height calculation.
       resultsElement.style.removeProperty('max-height'); // Ensure we override any lingering max-height from Zen's CSS or our temp styles.
       
-      const resultRows = resultsElement.querySelectorAll('.urlbarView-row:not([type="tip"], [type="dynamic"])');
+      const resultRows = resultsElement.querySelectorAll('.urlbarView-row:not([type="tip"])');
       const currentResultCount = resultRows.length;
 
       if (currentResultCount === lastResultCount && lastResultCount !== -1) {
